@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DisplayListController!{% endblock %}
+{% block title %}Test d'affichage{% endblock %}
 
 {% block body %}
 <style>
@@ -9,12 +9,37 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Test {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/mini_projet_cda/src/Controller/DisplayListController.php'|file_link(0) }}">src/Controller/DisplayListController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/mini_projet_cda/templates/display_list/index.html.twig'|file_link(0) }}">templates/display_list/index.html.twig</a></code></li>
-    </ul>
+    <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom de l'établissement</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Ecole</td>
+            <td>adresse 1</td>
+            <td>mail 1</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Collège</td>
+            <td>adresse 2</td>
+            <td>mail 2</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Lycée</td>
+            <td>adresse 3</td>
+            <td>mail 3</td>
+        </tr>
+    </tbody>
+    </table>
 </div>
 {% endblock %}
