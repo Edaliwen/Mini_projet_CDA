@@ -14,9 +14,10 @@ class DisplayListController extends AbstractController
     #[Route('/display/list', name: 'app_display_list')]
     public function index(CallApiService $callApiService): Response
     {    
-        dd($callApiService->getVersaillesData());
+        
+        //dd($callApiService->getVersaillesData());
         return $this->render('display_list/index.html.twig', [
-            'controller_name' => 'DisplayListController',
+            'listeEtablissements' => $callApiService->getVersaillesData(),
         ]);
     }
 }
