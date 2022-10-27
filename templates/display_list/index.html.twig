@@ -19,15 +19,19 @@
             </tr>
         </thead>
         <tbody>
+        {% for data in listeEtablissements %}
+        
             <tr>
-                <td scope="row">{{ data.records.0.record.fields.nom_etablissement }}</th>
-                <td>{{ data.records.0.record.fields.type_etablissement }}</td>
-                <td>{{ data.records.0.record.fields.statut_public_prive }}</td>
-                <td>{{ data.records.0.record.fields.adresse_1 }}</td>
-                <td>{{ data.records.0.record.fields.code_postal }}</td>
-                <td>{{ data.records.0.record.fields.mail }}</td>
+                <td scope="row">{{ data.nom }}</th>
+                <td>{{ data.type }}</td>
+                <td>{{ data.statut }}</td>
+                <td>{{ data.adresse }}</td>
+                <td>{{ data.code }}</td>
+                <td>{{ data.email }}</td>
             </tr>
+        {% endfor %}
          
         </tbody>
     </table>
+
 {% endblock %}

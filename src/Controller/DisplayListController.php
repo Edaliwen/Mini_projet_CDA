@@ -17,7 +17,7 @@ class DisplayListController extends AbstractController
         
         //dd($callApiService->getVersaillesData());
         return $this->render('display_list/index.html.twig', [
-            'data' => $callApiService->getVersaillesData(),
+            'listeEtablissements' => $callApiService->getVersaillesData(),
         ]);
     }
 }
