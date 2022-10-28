@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'MobiriseIcons';
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #777777;    
+    background: #fff;
+    height: 100%;
+    position: relative;
+  }
+  a{
+    font-family: 'Poppins', sans-serif;
+  }
+  button.btn.btn-outline-warning:hover {
+    color: white;
+}
+  header, footer.fixed-bottom{
+    background: #20B2AA;
+  }
+  nav.navbar.navbar-expand-lg.bg-light {
+    --bs-bg-opacity: 0;
+}
+nav.navbar.navbar-expand-lg.bg-light a {
+  color: white;  
+}
+a.nav-link, span {
+  font-size: 16px;
+}
+footer.fixed-bottom span{
+ color: white;
+}
+footer.fixed-bottom {
+  padding: 0.5em;
+}
+span.copyright{
+  font-size: 11px;
+}
+span.contact {
+  float: right;
+}
+form.needs-validation {
+  width: 50%;
+  margin: auto;
+}
+.form-group{
+  margin-bottom: 1em;
+}
+legend {
+  padding-bottom: 1em;
+}
+button.btn.btn-primary.btn-lg.btn-block{
+  background-color: #20B2AA;
+  border: none;
+}
+.container.blocInscription.mb-3 h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 24px;
+  color: #20B2AA;
+}
+.contact a{
+  color: white;
+  text-decoration: none;  
+}
+
+
