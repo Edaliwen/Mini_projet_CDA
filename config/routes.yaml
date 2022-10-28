@@ -1,3 +1,14 @@
-controllers:
-    resource: ../src/Controller/
-    type: attribute
+# config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+app_home:
+    path: /home
+    controller: App\Controller\HomeController::home
+
+app_user:
+    path: /inscription
+    controller: App\Controller\UserController::inscription 
+
+app_login:
+    path: /login
+    controller: App\Controller\UserController::connexion

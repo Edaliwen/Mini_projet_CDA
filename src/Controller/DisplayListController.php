@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Symfony\Bundle\DebugBundle;
 
 class DisplayListController extends AbstractController
 {
@@ -15,7 +16,7 @@ class DisplayListController extends AbstractController
     public function index(CallApiService $callApiService): Response
     {    
         
-        //dd($callApiService->getVersaillesData());
+        dd($callApiService->getVersaillesData());
         return $this->render('display_list/index.html.twig', [
             'listeEtablissements' => $callApiService->getVersaillesData(),
         ]);
