@@ -1,6 +1,7 @@
 <?php
 
 use Symfony\Component\Dotenv\Dotenv;
+use Symfony\Bundle\DebugBundle;
 
 require dirname(__DIR__).'/vendor/autoload.php';
 
