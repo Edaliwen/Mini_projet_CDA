@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="container py-5 h-100 blocInscription ">
+    <form action="{{ path('app_user') }}" method="post" class="needs-validation" novalidate>
+    <fieldset>
+      <legend>Formulaires d'inscription étudiantes</legend>
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" id="nom" name="_nom">
+      </div>
+      <div class="form-group">
+        <label for="nom">Prénom</label>
+        <input type="text" class="form-control" id="prenom" name="_prenom">
+      </div>
+      <div class="form-group">
+        <label for="email">Entrez votre mail</label>
+        <input type="email" class="form-control" id="mail" name="_mail">
+      </div>     
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" class="form-control" id="password" name="_password">
+      </div>    
+      <div class="form-group">
+        <label for="tel">Téléphone</label>
+        <input type="tel" class="form-control" id="tel" name="_tel">
+      </div> 
+      <input type="submit" name="save" value="Save" />
+    </fieldset>
+  </form>
+</div>
+{% endblock %}
