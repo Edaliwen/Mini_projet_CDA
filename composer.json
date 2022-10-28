@@ -24,9 +24,9 @@
         "symfony/expression-language": "6.0.*",
 =======
         "symfony/asset": "6.0.*|6.1.*",
-        "symfony/console": "6.1.*",
-        "symfony/dotenv": "6.1.*",
-        "symfony/finder": "6.1.*",
+        "symfony/console": "6.0.*|6.1.*",
+        "symfony/dotenv": "6.0.*|6.1.*",
+        "symfony/finder": "6.0.*|6.1.*",
 >>>>>>> Stashed changes
         "symfony/flex": "^2",
         "symfony/form": "6.0.*",
